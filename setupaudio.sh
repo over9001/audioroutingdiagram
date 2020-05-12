@@ -12,6 +12,9 @@
 MICROPHONE="alsa_input.usb-SteelSeries_SteelSeries_Arctis_7-00.analog-mono"
 SPEAKERS="alsa_output.usb-SteelSeries_SteelSeries_Arctis_7-00.analog-stereo"
 
+# Ryan: We also set chillhop racoon and any other video/audio sources to virtual1
+#    virtual1 is shared to headphones AND output mixed with mic
+
 
 # Create the null sinks
 # virtual1 gets your audio source (mplayer ...) only
