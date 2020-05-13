@@ -1,4 +1,4 @@
-#!/bin/bash
+pavu#!/bin/bash
 
 # This script sets up pulseaudio virtual devices
 # The following variables must be set to the names of your own microphone and speakers devices
@@ -31,3 +31,10 @@ pactl load-module module-loopback source=$MICROPHONE sink=virtual2
 # pactl load-module module-loopback source=virtual1.monitor
 # pactl load-module module-loopback source=virtual1.monitor sink=virtual2
 # pactl load-module module-loopback sink=virtual2
+
+# make sure to unclobber output to headset,
+# be sure to set jitsi to virtual2 monitor in pavucontrol
+
+
+# You need a sequenced script, pre-staged, for these infocalls
+
